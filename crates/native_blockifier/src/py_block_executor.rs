@@ -35,8 +35,8 @@ use crate::transaction_executor::TransactionExecutor;
 #[path = "py_block_executor_test.rs"]
 mod py_block_executor_test;
 
-const MAX_STEPS_PER_TX: u32 = 4_000_000;
-const MAX_VALIDATE_STEPS_PER_TX: u32 = 1_000_000;
+const MAX_STEPS_PER_TX: u32 = 100_000_000;
+const MAX_VALIDATE_STEPS_PER_TX: u32 = 100_000_000;
 
 /// Stripped down `TransactionExecutionInfo` for Python serialization, containing only the required
 /// fields.
